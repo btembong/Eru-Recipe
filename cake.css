@@ -1,0 +1,139 @@
+:root {
+  --bg: #fffaf7;
+  --card: #03360dc7;
+  --text: #2b2b2b;
+  --accent: #055c0c;
+  --muted: #0c420c;
+  --border: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 20% 0%, #fff4ea, var(--bg));
+}
+
+.container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+ 
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0.2rem 0;  background: var(--accent);
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 6px 18px rgba(1, 56, 19, 0.25);
+}
+
+.subtitle {
+  color: var(--bg);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.hero {
+  background: linear-gradient(135deg, #fbe7d3 0%, #fdebd7 50%, #fff 100%);
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .content { grid-template-columns: 1fr; }
+}
+
+.section {
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  background: #fffefe;
+}
+
+.notes {
+  padding: 1rem 1.5rem 1.5rem;
+  border-top: 1px solid var(--border);
+  background: #fffdf9;
+}
+
+.note {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+.note-icon {
+  width: 28px; height: 28px;
+  display: grid; place-items: center;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-weight: 700;
+}
+
+.footer { 
+  text-align: center;
+  color: var(--muted);
+  font-size: 2rem ;
+  margin-top: 0.9rem;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 6px 18px rgba(139,92,246,0.25);
+}
+
+
+.dish-image{
+  display: flex;
+  max-width: 100%;
+  height: auto;  
+  margin: 1rem 0;
+  padding: 2 1rem;
+}
+
